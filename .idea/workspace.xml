@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23706f74-0d2d-43d3-8816-6f3bbf10d854" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Reader Feeder.key" afterPath="$PROJECT_DIR$/Docs/Reader Feeder.key" />
-      <change beforePath="$PROJECT_DIR$/Reader Feeder.pdf" afterPath="$PROJECT_DIR$/Docs/Reader Feeder.pdf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/RFWeb/src/app/app.routers.ts" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/RFWeb/src/app/app.component.html" afterPath="$PROJECT_DIR$/RFWeb/src/app/app.component.html" />
+      <change beforePath="$PROJECT_DIR$/RFWeb/src/app/app.component.ts" afterPath="$PROJECT_DIR$/RFWeb/src/app/app.component.ts" />
+      <change beforePath="$PROJECT_DIR$/RFWeb/src/app/app.material.module.ts" afterPath="$PROJECT_DIR$/RFWeb/src/app/app.material.module.ts" />
+      <change beforePath="$PROJECT_DIR$/RFWeb/src/app/app.module.ts" afterPath="$PROJECT_DIR$/RFWeb/src/app/app.module.ts" />
+      <change beforePath="$PROJECT_DIR$/RFWeb/src/styles.scss" afterPath="$PROJECT_DIR$/RFWeb/src/styles.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -100,15 +105,16 @@
       <option name="presentableId" value="Default" />
       <updated>1514323398252</updated>
       <workItem from="1514323399427" duration="1459000" />
-      <workItem from="1514342861257" duration="899000" />
+      <workItem from="1514342861257" duration="1252000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2358000" />
+    <option name="totallyTimeSpent" value="2711000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
