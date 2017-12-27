@@ -1,8 +1,4 @@
-import {Component, NgModule, OnInit} from '@angular/core';
-import { MatButtonModule, MatMenuModule, MatToolbarModule} from '@angular/material';
-import { MatCommonModule} from '@angular/material';
-import { RouterModule} from '@angular/router';
-import { MatIconModule} from '@angular/material/icon';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -16,10 +12,4 @@ export class NavbarComponent implements  OnInit {
 
   }
 }
-@NgModule({
-  imports: [MatButtonModule, MatMenuModule, MatCommonModule, RouterModule, MatToolbarModule, MatIconModule],
-  exports: [NavbarComponent],
-  declarations: [NavbarComponent]
-})
-export class NavbarModule {}
 
