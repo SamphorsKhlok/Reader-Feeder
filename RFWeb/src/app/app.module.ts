@@ -9,6 +9,8 @@ import { NavbarComponent } from './shared/navbar/navbar';
 import { HomeComponent } from './pages/home/home.component';
 import { myRoutes } from './app.routers';
 import { RouterModule} from '@angular/router';
+import { HttpService} from './services/web/http.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -23,8 +25,9 @@ import { RouterModule} from '@angular/router';
     BrowserAnimationsModule,
     MaterialModule,
     RouterModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [HttpService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

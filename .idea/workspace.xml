@@ -2,15 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23706f74-0d2d-43d3-8816-6f3bbf10d854" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/RFWeb/src/app/services/web/http.service.spec.ts" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/RFWeb/src/app/app.component.html" afterPath="$PROJECT_DIR$/RFWeb/src/app/app.component.html" />
-      <change beforePath="$PROJECT_DIR$/RFWeb/src/app/app.component.ts" afterPath="$PROJECT_DIR$/RFWeb/src/app/app.component.ts" />
+      <change beforePath="$PROJECT_DIR$/RFWeb/protractor.conf.js" afterPath="$PROJECT_DIR$/RFWeb/protractor.conf.js" />
       <change beforePath="$PROJECT_DIR$/RFWeb/src/app/app.material.module.ts" afterPath="$PROJECT_DIR$/RFWeb/src/app/app.material.module.ts" />
       <change beforePath="$PROJECT_DIR$/RFWeb/src/app/app.module.ts" afterPath="$PROJECT_DIR$/RFWeb/src/app/app.module.ts" />
       <change beforePath="$PROJECT_DIR$/RFWeb/src/app/pages/home/home.component.html" afterPath="$PROJECT_DIR$/RFWeb/src/app/pages/home/home.component.html" />
       <change beforePath="$PROJECT_DIR$/RFWeb/src/app/pages/home/home.component.scss" afterPath="$PROJECT_DIR$/RFWeb/src/app/pages/home/home.component.scss" />
       <change beforePath="$PROJECT_DIR$/RFWeb/src/app/pages/home/home.component.ts" afterPath="$PROJECT_DIR$/RFWeb/src/app/pages/home/home.component.ts" />
-      <change beforePath="$PROJECT_DIR$/RFWeb/src/app/shared/navbar/navbar.ts" afterPath="$PROJECT_DIR$/RFWeb/src/app/shared/navbar/navbar.ts" />
+      <change beforePath="$PROJECT_DIR$/RFWeb/src/app/services/http/httpservice.service.spec.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/RFWeb/src/app/services/http/httpservice.service.ts" afterPath="$PROJECT_DIR$/RFWeb/src/app/services/web/http.service.ts" />
+      <change beforePath="$PROJECT_DIR$/RFWeb/src/polyfills.ts" afterPath="$PROJECT_DIR$/RFWeb/src/polyfills.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />

@@ -1,4 +1,5 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit} from '@angular/core';
+import { HttpService} from '../../services/web/http.service';
 
 @Component({
   selector: 'app-home',
@@ -6,10 +7,18 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
-  constructor() { }
+  data: any = [];
+  constructor(public service: HttpService) { }
 
   ngOnInit() {
+    this.getNewsFeed();
+  }
+  getNewsFeed() {
+    this.service.getFeed().subscribe(
+      data => this.data = data.articles,
+      error => console.error(error),
+      () => console.log('load completed')
+    );
   }
 
 }
