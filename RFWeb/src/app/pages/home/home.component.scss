@@ -1,9 +1,21 @@
-.example-card {
-  // width: 400px;
+@import "../../../styles/_constant";
+
+.card-item {
+  width: 350px;
   margin: 5px;
+  display: inline-block;
 }
 
 .example-header-image {
   background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
   background-size: cover;
+}
+.card-wrapper {
+  justify-content: center;
+
+  @media (max-width: $small-breakpoint-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

@@ -1,22 +1,30 @@
-<mat-grid-list cols="3" rowHeight="1:1.25">
-  <mat-grid-tile *ngFor="let news of data; let i=index" colspan="1" rowspan="1">
-    <mat-card class="example-card">
-      <mat-card-header>
-        <div mat-card-avatar class="example-header-image"></div>
-        <mat-card-title>{{news.author}}</mat-card-title>
-        <mat-card-subtitle>{{news.publishedAt}}</mat-card-subtitle>
-      </mat-card-header>
-      <img mat-card-image src="{{news.urlToImage}}">
-      <mat-card-content>
-        <p>
-          {{news.description}}
-        </p>
-      </mat-card-content>
-      <mat-card-actions>
-        <button mat-button>LIKE</button>
-        <button mat-button>SHARE</button>
-      </mat-card-actions>
-    </mat-card>
-  </mat-grid-tile>
-</mat-grid-list>
+<div class="card-wrapper">
+  <mat-card class="card-item" *ngFor="let news of data; let i=index">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{news.title}}</mat-card-title>
+      <mat-card-subtitle>{{news.publishedAt}} - {{news.author}}
+      </mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="{{news.urlToImage}}">
+    <mat-card-content>
+      <p>
+        {{news.description}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>LIKE</button>
+      <button mat-button>SHARE</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+
+<!--<mat-grid-list cols="4" rowHeight="1:1">-->
+  <!--<mat-grid-tile *ngFor="let news of data; let i=index" colspan="2" rowspan="1">-->
+    <!--<img src="{{news.urlToImage}}">-->
+    <!--<mat-grid-tile-footer>-->
+      <!--<h4>{{news.title}}</h4>-->
+    <!--</mat-grid-tile-footer>-->
+  <!--</mat-grid-tile>-->
+<!--</mat-grid-list>-->
 
