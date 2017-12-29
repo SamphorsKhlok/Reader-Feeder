@@ -1,4 +1,4 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit, ElementRef} from '@angular/core';
 import { HttpService} from '../../services/web/http.service';
 
 @Component({
@@ -8,7 +8,7 @@ import { HttpService} from '../../services/web/http.service';
 })
 export class HomeComponent implements OnInit {
   data: any = [];
-  constructor(public service: HttpService) { }
+  constructor(public service: HttpService, private el: ElementRef) { }
 
   ngOnInit() {
     this.getNewsFeed();

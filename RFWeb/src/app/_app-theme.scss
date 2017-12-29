@@ -1,0 +1,48 @@
+@import '../../node_modules/@angular/material/theming';
+
+@import 'shared/footer/footer-theme';
+@import 'shared/navbar/navbar-theme';
+@import 'pages/home/home-theme';
+
+// Styles for the app that are based on the current theme.
+@mixin material-app-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $warn: map-get($theme, warn);
+  $background: map-get($theme, background);
+  $foreground: map-get($theme, foreground);
+
+  app-root{
+    //.app-background {
+    //  background: mat-color($background, background);
+    //}
+
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 64px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    @media (max-width: 720px) {
+      top: 56px;
+
+      app-home {
+        overflow-y: visible;
+      }
+    }
+
+    .app-primary-header {
+      background: mat-color($primary);
+
+      h1 {
+        color: mat-color($primary, default-contrast);
+      }
+    }
+  }
+
+  @include footer-theme($theme);
+  @include nav-bar-theme($theme);
+  @include home-theme($theme);
+}

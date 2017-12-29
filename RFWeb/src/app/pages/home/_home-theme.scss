@@ -1,0 +1,25 @@
+@import '~@angular/material/theming';
+@import "../../../styles/_constant";
+
+@mixin home-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $warn: map-get($theme, warn);
+  $background: map-get($theme, background);
+  $foreground: map-get($theme, foreground);
+
+  app-home {
+    .card-wrapper {
+      justify-content: center;
+
+      background: mat-color($background, background);
+
+      @media (max-width: $small-breakpoint-width) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  }
+
+}

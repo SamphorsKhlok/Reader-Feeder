@@ -1,5 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+// use the built-in theme directly
+// @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+//import custom theme
+@import "./styles/default-theme";
+@import "./styles/dark-theme";
+@import "~@angular/material/theming";
+@import "./app/app-theme";
+@include mat-core();
+
+@include angular-material-theme($default-theme);
+@include material-app-theme($default-theme);
+
+.dark-theme{
+  @include angular-material-theme($dark-theme);
+  @include material-app-theme($dark-theme);
+}
 
 body{
   margin:0px;

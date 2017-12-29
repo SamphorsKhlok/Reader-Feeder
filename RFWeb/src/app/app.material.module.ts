@@ -9,6 +9,8 @@ import {
   MatToolbarModule,
   MatGridListModule,
   MatChipsModule,
+  MatSlideToggleModule,
+  MatTooltipModule,
 } from '@angular/material';
 
 @NgModule({
@@ -23,6 +25,8 @@ import {
     MatGridListModule,
     MatChipsModule,
     MatButtonModule,
+    MatSlideToggleModule,
+    MatTooltipModule,
   ],
   exports: [
     CommonModule,
@@ -35,6 +39,8 @@ import {
     MatGridListModule,
     MatChipsModule,
     MatButtonModule,
+    MatSlideToggleModule,
+    MatTooltipModule,
   ]
 })
 

@@ -11,6 +11,9 @@ import { myRoutes } from './app.routers';
 import { RouterModule} from '@angular/router';
 import { HttpService} from './services/web/http.service';
 import { HttpClientModule } from '@angular/common/http';
+import { FooterComponent } from './shared/footer/footer.component';
+import { ThemePickerComponent } from './shared/theme-picker/theme-picker.component';
+import { ThemeService} from './services/theme/theme.service';
 
 
 @NgModule({
@@ -18,6 +21,8 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     HomeComponent,
     NavbarComponent,
+    FooterComponent,
+    ThemePickerComponent,
   ],
   imports: [
     myRoutes,
@@ -27,7 +32,7 @@ import { HttpClientModule } from '@angular/common/http';
     RouterModule,
     HttpClientModule,
   ],
-  providers: [HttpService],
+  providers: [HttpService, ThemeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
