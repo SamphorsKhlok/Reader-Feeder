@@ -12,6 +12,7 @@ import {
   MatSlideToggleModule,
   MatTooltipModule,
 } from '@angular/material';
+import {LayoutModule} from '@angular/cdk/layout';
 
 @NgModule({
   imports: [
@@ -27,6 +28,7 @@ import {
     MatButtonModule,
     MatSlideToggleModule,
     MatTooltipModule,
+    LayoutModule,
   ],
   exports: [
     CommonModule,
@@ -41,6 +43,7 @@ import {
     MatButtonModule,
     MatSlideToggleModule,
     MatTooltipModule,
+    LayoutModule,
   ]
 })
 

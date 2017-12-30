@@ -1,6 +1,7 @@
 <mat-slide-toggle class="theme-picker" color="accent"
                   matTooltip="Toggle between day/night reading mode" [checked]="currentTheme.themeName!='default-theme'"
                   labelPosition="before" (change)="detectChange()" #themeToggler>
-  Switch Mode
+  <span class="webOnly">Switch Mode</span>
 </mat-slide-toggle>
+
 

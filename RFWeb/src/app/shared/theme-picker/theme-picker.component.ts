@@ -1,10 +1,11 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {SiteTheme, ThemeService} from '../../services/theme/theme.service';
 
 @Component({
   selector: 'app-theme-picker',
   templateUrl: './theme-picker.component.html',
-  styleUrls: ['./theme-picker.component.scss']
+  styleUrls: ['./theme-picker.component.scss'],
+  // encapsulation: ViewEncapsulation.Native
 })
 export class ThemePickerComponent implements OnInit {
   currentTheme: SiteTheme;

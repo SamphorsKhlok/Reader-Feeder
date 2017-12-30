@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import { BreakpointObserver, Breakpoints} from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-navbar',
@@ -6,7 +7,7 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./navbar.scss']
 })
 export class NavbarComponent implements  OnInit {
-  message = 'Welcome to Reader Feeder';
+  message = 'Reader Feeder';
 
   ngOnInit() {
 

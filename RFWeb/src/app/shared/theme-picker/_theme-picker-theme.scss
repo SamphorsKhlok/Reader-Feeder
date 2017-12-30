@@ -1,16 +1,15 @@
 @import '~@angular/material/theming';
-@mixin nav-bar-theme($theme) {
+@mixin theme-picker-theme($theme) {
   $primary: map-get($theme, primary);
   $accent: map-get($theme, accent);
   $warn: map-get($theme, warn);
   $background: map-get($theme, background);
   $foreground: map-get($theme, foreground);
 
-  app-navbar {
-    color: mat-color($primary, default-contrast);
-
-    .app-navbar, .app-navbar-header {
-      background: mat-color($primary);
+  app-theme-picker {
+    //override built in
+    .mat-slide-toggle {
+      display: block;
     }
   }
 }

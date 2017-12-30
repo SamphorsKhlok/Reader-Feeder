@@ -3,6 +3,7 @@
 @import 'shared/footer/footer-theme';
 @import 'shared/navbar/navbar-theme';
 @import 'pages/home/home-theme';
+@import 'shared/theme-picker/theme-picker-theme';
 
 // Styles for the app that are based on the current theme.
 @mixin material-app-theme($theme) {
@@ -25,11 +26,19 @@
     left: 0;
     right: 0;
 
-    @media (max-width: 720px) {
+    .webOnly {
+      display: block;
+    }
+
+    @media (max-width: $small-breakpoint-width) {
       top: 56px;
 
       app-home {
         overflow-y: visible;
+      }
+
+      .webOnly{
+        display: none;
       }
     }
 
@@ -45,4 +54,5 @@
   @include footer-theme($theme);
   @include nav-bar-theme($theme);
   @include home-theme($theme);
+  @include theme-picker-theme($theme);
 }
