@@ -14,6 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './shared/footer/footer.component';
 import { ThemePickerComponent } from './shared/theme-picker/theme-picker.component';
 import { ThemeService} from './services/theme/theme.service';
+import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import { ThemeService} from './services/theme/theme.service';
     MaterialModule,
     RouterModule,
     HttpClientModule,
+    InfiniteScrollModule,
   ],
   providers: [HttpService, ThemeService],
   bootstrap: [AppComponent]

@@ -15,10 +15,15 @@ export class HomeComponent implements OnInit {
   }
   getNewsFeed() {
     this.service.getFeed().subscribe(
-      data => this.data = data['articles'],
+      // data => this.data = data['articles'],
+      data => this.data = this.data.concat(data['articles']),
       error => console.error(error),
       () => console.log('load completed')
     );
+  }
+  onScroll () {
+    console.log('scrolled!!');
+    this.getNewsFeed();
   }
 
 }

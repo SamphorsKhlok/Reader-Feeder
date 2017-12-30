@@ -1,4 +1,8 @@
-<div class="card-wrapper">
+<div class="card-wrapper"
+  infiniteScroll
+  [infiniteScrollDistance]="1"
+  [infiniteScrollThrottle]="100"
+  (scrolled)="onScroll()">
   <mat-card class="card-item" *ngFor="let news of data; let i=index">
     <mat-card-header>
       <div mat-card-avatar class="example-header-image"></div>
